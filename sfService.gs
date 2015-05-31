@@ -26,8 +26,8 @@ function getSfService() {
   return OAuth2.createService('salesforce')
     .setAuthorizationBaseUrl('https://login.salesforce.com/services/oauth2/authorize')
     .setTokenUrl('https://login.salesforce.com/services/oauth2/token')
-    .setClientId(scriptProperties.getProperty("key"))  // Added in Script Properties
-    .setClientSecret(scriptProperties.getProperty("secret"))  // Added in Script Properties
+    .setClientId(scriptProperties.getProperty("sfConsumerKey"))  // Added in Script Properties
+    .setClientSecret(scriptProperties.getProperty("sfConsumerSecret"))  // Added in Script Properties
     .setProjectKey('YOUR PROJECT KEY')  // File > Project Properties
     .setCallbackFunction('authCallback')
     .setPropertyStore(PropertiesService.getUserProperties())
