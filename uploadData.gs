@@ -15,3 +15,4 @@ function upload(object, payload) {
     method: "POST"
   });
 }
+
