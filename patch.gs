@@ -1,5 +1,6 @@
 /* I realized I used a very specific function to patch my records
    in the video, so below is one where you can set your own object
+   Youtube URL: https://youtu.be/FEJElpN9eGk
 */
 
 function patchWidget(object, id, payload) {
