@@ -1,11 +1,20 @@
 /*
  * OAuth 2.0 for Salesforce
- * Using OAuth2 for Apps Script - https://github.com/googlesamples/apps-script-oauth2
+ * Using OAuth2 for Apps Script - https://github.com/googlesamples/apps-script-oauth2 (Version 16)
  * And Salesforce Analytics API - http://www.salesforce.com/us/developer/docs/api_analytics/salesforce_analytics_rest_api.pdf
+ 
+ * Prerequisites: 
+ * 1. Must be run using the GAS Legacy Editor
+ * 2. V8 Runtime is disabled in the GAS Editor
+ * 3. OAuth2 Libary has been added to the GAS: 
+ *   3.1. Click on the menu item "Resources > Libraries..."
+ *   3.2. In the "Find a Library" text box, enter the script ID `1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF` and click the "Select" button.
+ *   3.3. Choose a version in the dropdown box (Version 16 has been verified as working as of 2/8/21).
+ *   3.4. Click the "Save" button.
  
  * Steps to implement: 
  * 1. Create spreadsheet (or document) and paste this code in the associated script project
- * 2. Find the project's key
+ * 2. Find the project's key (In GAS: File -> Project Properties -> Project Key
  * 3. Create a connected app in Salesforce with a callback URL https://script.google.com/macros/d/{PROJECT KEY}/usercallback (this requires Admin access)
  * 4. Get the Consumer Key and Consumer Secret and store them in the Script Properties (in the code below as "sfConsumerKey" and "sfConsumerSecret")
  * 5. Set the Project Key and Scope in the function getSfService() 
